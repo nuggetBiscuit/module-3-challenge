@@ -53,7 +53,13 @@ function writePassword() {
     console.log("Lowercase: " + validChars);
   }
 
-  // for (var i = 0; i < )
+  for (var i = 0; i < charLen; i++){
+    var randomStuff = Math.floor(Math.random() * validChars.length);
+    password += validChars[randomStuff];
+  }
+  
+  console.log("Password foo: " + password);
+  genPass.value = password;
 }
 else if (8 > charLen) {
     console.log("Too short.");
@@ -68,12 +74,10 @@ else if (128 < charLen){
   
 
 }
-var password = generatePassword();
+var run = generatePassword();
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function getPasswordCharacter() {
-  return String.fromCharCode(Math.floor(Math.random() * 77) + 34);
-}
+
