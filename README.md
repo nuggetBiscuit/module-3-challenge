@@ -37,4 +37,4 @@ The following image shows the web application's appearance and functionality:
 
 ## Github Pages Link
 
-https://nuggetbiscuit.github.io/module-3-challenge/
+https://nuggetbiscuit.github.io/random-password-generator/
